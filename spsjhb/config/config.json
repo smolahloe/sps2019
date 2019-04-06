@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "celebrations-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/celebrations/CelebrationsWebPart.js",
+          "manifest": "./src/webparts/celebrations/CelebrationsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CelebrationsWebPartStrings": "lib/webparts/celebrations/loc/{locale}.js"
+  }
+}

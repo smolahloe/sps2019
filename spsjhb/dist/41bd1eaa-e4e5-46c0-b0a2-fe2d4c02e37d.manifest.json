@@ -1,0 +1,66 @@
+{
+  "id": "41bd1eaa-e4e5-46c0-b0a2-fe2d4c02e37d",
+  "alias": "CelebrationsWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Celebrations"
+      },
+      "description": {
+        "default": "Displays a employees celebrations (birthdays, graduations, weddings) on the intranet."
+      },
+      "officeFabricIconFontName": "Balloons",
+      "properties": {
+        "description": "celebrations"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "celebrations-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "celebrations-web-part": {
+        "type": "path",
+        "path": "dist/celebrations-web-part.js"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-lodash-subset": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.8.0",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}
